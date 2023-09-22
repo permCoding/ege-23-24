@@ -11,11 +11,7 @@
 13:20 - 14:50  
 ``` 
 
-[Наши планы](https://docs.google.com/spreadsheets/d/1Kw0XZmMWeDn3DAlK7mHgJYqDovw2AngaE7qRtOuJhSY/edit?usp=sharing)  
-
-[ДНИ ЗАНЯТИЙ И ИЗУЧАЕМЫЕ ВОПРОСЫ](days.md)  
-
-[Карта знаний по программированию для ЕГЭ](knowledge-map.md)  
+[Наши планы](https://docs.google.com/spreadsheets/d/1Kw0XZmMWeDn3DAlK7mHgJYqDovw2AngaE7qRtOuJhSY/edit?usp=sharing) | [ДНИ ЗАНЯТИЙ](days.md) | [Карта знаний](knowledge-map.md)  
 
 ### Где будем брать задачи для тренировок:  
 
@@ -25,6 +21,7 @@
 
 ### Дистанционные занятия тут:  
 
+* [BBB](https://bbb.psaa.ru/rooms/l2z-d0s-9am-bdi/join)  
 * [BBB6](https://bbb6.psaa.ru/b/qt6-06w-o09-6wz)  
 * [Доска для рисования](https://jamboard.google.com/d/1xmh7Mrc_nAR3PmstdYa9nYTs9L2-kh0dS6ZtaswkQZU/edit?usp=sharing)  
 * [Google Colab](https://colab.research.google.com/drive/1Ip_2tQ3MZDehmYG36aAHPFj_msrPgJCt?usp=sharing)  
@@ -32,14 +29,15 @@
 Чем будем пользоваться:  
 
 1) [Язык программирования **Python**](https://www.python.org/downloads/)  
-2) [Интегрированная среда **IDLE** (Integrated Development and Learning Environment) - поставляется вместе с **Python**](https://www.python.org/downloads/)  
+2) [Редактор **IDLE** (Integrated Development and Learning Environment)](https://www.python.org/downloads/)  
 3) [Редактор кода **VS Code**](https://code.visualstudio.com/)  
 4) [Редактор кода **Wing**](https://wingware.com/downloads/wing-101)  
 5) [Редактор кода **Thonny**](https://thonny.org/)  
 6) [Среда разработки **PyCharm** Community](https://www.jetbrains.com/ru-ru/pycharm/download/)  
-7) [**Google Colab** for Python](https://colab.research.google.com/)  
-8) [Учебная доска](https://jamboard.google.com/)  
-9) [КУМИР](https://www.niisi.ru/kumir/dl.htm)  
+7) [Online Среда разработки Replit](https://replit.com/)  
+8) [**Google Colab** for Python](https://colab.research.google.com/)  
+9) [Учебная доска](https://jamboard.google.com/)  
+10) [КУМИР](https://www.niisi.ru/kumir/dl.htm)  
 
 Дополнительно рекомендую:  
 
