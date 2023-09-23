@@ -26,6 +26,11 @@
 * [Доска для рисования](https://jamboard.google.com/d/1xmh7Mrc_nAR3PmstdYa9nYTs9L2-kh0dS6ZtaswkQZU/edit?usp=sharing)  
 * [Google Colab](https://colab.research.google.com/drive/1Ip_2tQ3MZDehmYG36aAHPFj_msrPgJCt?usp=sharing)  
 
+### Анкетирование и Тестирование:  
+
+* [EXAM](http://exam.1gb.ru/)
+* [Мои задачи на Stepik`е](https://stepik.org/course/63529/)  
+
 Чем будем пользоваться:  
 
 1) [Язык программирования **Python**](https://www.python.org/downloads/)  
