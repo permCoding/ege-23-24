@@ -17,6 +17,7 @@
 
 * [kompege](https://kompege.ru/)  
 * [задачи ЕГЭ sdamgia](https://inf-ege.sdamgia.ru/)  
+* [Yandex ЕГЭ](https://education.yandex.ru/ege?utm_source=platform&utm_medium=partner&utm_campaign=ege&utm_content=cege_link_kabanov&utm_term=20231101)  
 * [Сайт Константина Полякова](https://kpolyakov.spb.ru/school/ege/tests.htm)  
 
 ### Дистанционные занятия тут:  
