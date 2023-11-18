@@ -44,6 +44,7 @@
 8) [**Google Colab** for Python](https://colab.research.google.com/)  
 9) [Учебная доска](https://jamboard.google.com/)  
 10) [КУМИР](https://www.niisi.ru/kumir/dl.htm)  
+11) https://pastebin.com/  
 
 Дополнительно рекомендую:  
 
