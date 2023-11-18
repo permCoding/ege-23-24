@@ -1,4 +1,4 @@
-import requests
+import requests  # pip install requests
 
 url = "https://pcoding.ru/csv/09_2100.txt"
 resp = requests.get(url)  # open()
