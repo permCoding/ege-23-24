@@ -1,0 +1,20 @@
+1;R
+2;C
+3;Go
+4;C#
+5;C++
+6;PHP
+7;SQL
+8;Java
+9;Ruby
+10;Perl
+11;Swift
+12;MATLAB
+13;Groovy
+14;Python
+15;PL/SQL
+16;JavaScript
+17;Objective-C
+18;Visual Basic
+19;Assembly language
+20;Classic Visual Basic

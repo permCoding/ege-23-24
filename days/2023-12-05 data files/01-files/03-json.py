@@ -9,3 +9,4 @@ f.close()
 # print(arr[0])
 
 print(json.dumps(arr[0], indent=2))
+

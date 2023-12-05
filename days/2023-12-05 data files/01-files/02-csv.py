@@ -6,8 +6,8 @@ reader = csv.reader(f, delimiter=";")
 headers = next(reader)  # читаем строку заголовков
 print(*headers)
 
-for item in reader:
-    if item[2] == "м":
-        print(*item)
+for row in reader:
+    if row[2] == "м":
+        print(*row)
 
 f.close()

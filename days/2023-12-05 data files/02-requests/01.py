@@ -1,11 +1,12 @@
-import requests
-import csv
+import requests  # pip install requests
 
 
-filename = "https://pcoding.ru/txt/labrab04-3.txt"
+url = "https://pcoding.ru/txt/labrab04-3.txt"
 
-response = requests.get(filename)
+response = requests.get(url)
 response.encoding = "utf8"
-lines = response.text.split("\n")
+lines = response.text.splitlines()  # \n \r\n
 
 for line in lines: print(line)
+
+# Uniform Resource Locator - url
