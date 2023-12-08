@@ -20,7 +20,8 @@ https://scrapingclub.com/exercise/list_infinite_scroll/
 - .next_element .previous_element  
 - .next_elements .previous_elements  
 - .get() dict  
-- import re: soup.find_all(text=re.compile(ptn))  
+- import re: soup.find_all(text=re.compile(ptn))
+- soup.find('span', string=re.compile(ptn))
 
 ---  
 
