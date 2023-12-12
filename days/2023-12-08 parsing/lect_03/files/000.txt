@@ -1,0 +1,1105 @@
+﻿2018   ШАБЛОНЫ ПРОГРАММ   для разных потоков
+можно Ctrl+F и искать название своей группы/потока
+
+https://go.myownconference.ru/4O98623o261
+
+
+console.clear();
+fs = require('fs');
+read = require('readline-sync');
+utils = require('./000_m');
+
+console.log("Введите номер строки");
+num = Number(read.question())-1;
+
+text = fs.readFileSync("000.txt", "utf-8");
+lines = text.split("\r\n");
+arr = lines[num].split(' ');
+console.log(utils.getSumma(arr));
+
+
+function getSumma(arr) {
+	summa = 0;
+	for (elm of arr) {
+		summa += Number(elm);
+	}
+	return summa;
+}
+module.exports.getSumma = getSumma;
+
+
+
+console.clear();
+fs = require('fs');
+read = require('readline-sync');
+
+function getSumma(arr) {
+	summa = 0;
+	for (elm of arr) {
+		summa += Number(elm);
+	}
+	return summa;
+}
+
+console.log("Введите номер строки");
+num = Number(read.question())-1;
+
+text = fs.readFileSync("000.txt", "utf-8");
+lines = text.split("\r\n");
+arr = lines[num].split(' ')
+console.log(getSumma(arr));
+
+fs = require('fs'); console.clear();
+text = fs.readFileSync("000.txt", "utf-8");
+arr = text.split(' ');
+console.log(arr);
+// arr = process.argv.slice(2);
+max = arr[0];
+for (i=1; i<arr.length; i++) {
+	if (+arr[i]>max) max = +arr[i];
+}
+console.log(max);
+
+
+ПИбу-2018ПЭ - 04-05.10.18
+
+  x = 3;
+  y = x++; // x = x + 1;
+  document.write(x, " - ", y);
+  x = 3;
+  y = ++x; // x = x + 1;  
+  document.write(x, " - ", y);
+
+функции
+модули
+массивы
+
+<meta charset="utf-8">
+<script>
+	// названия месяцев
+	var ms = ["январь", "февраль", "март", "апрель"];
+	var count = ms.length;
+	var money = [];
+	for (let i=0; i<count; i++) {
+		m = Number( prompt( ms[i] ) );
+		money.push( m );
+	}
+	document.write(money,"<br>");
+	
+	// подсчёт среднего значения
+	var avg = 0; 
+	for (let i=0; i<count; i++) {
+		avg += money[i];
+	}
+	avg /= count; // avg = avg / count;
+	// подсчёт среднего значения
+	
+	document.write(avg,"<br>");
+	for (let i=0; i<count; i++) {
+		if (money[i]>avg)
+			document.write(ms[i],"<br>");
+	}
+	
+</script>
+
+
+<script>
+
+	var count = 6;
+	var money = [];
+	for (let i=0; i<count; i++) {
+		money.push( 23 );
+	}
+	document.write(money);
+	
+</script>
+
+- modul.js -
+  function fact_rec(n) {
+	if (n==1)
+		return 1;
+	else 
+		return n*fact_rec(n-1);
+  }
+
+  function factRec(n) {
+	return n==1? 1: n*fact_rec(n-1);
+  }
+  
+  function funcAdd(n) {
+	let result = 0;
+	for(let i = 0; i <= n; i+=1) {
+		result = result + i;
+	}
+	return result;
+  }
+
+- 01.html -
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="modul.js"> </script> 
+</head>
+
+<body>
+
+<script>
+
+  a = Number(prompt("Введите число", 10));
+  b = +prompt();
+  
+  document.write( funcAdd(a), "<br>" );
+  document.write( funcAdd(b) );  
+	
+</script>
+
+</body>
+
+</html>
+
+
+<script>
+
+  function funcAdd(n) {
+	result = 0;
+	for(i = 0; i <= n; i+=1) {
+		result = result + i;
+	}
+	return result;
+  }  
+
+  a = +prompt();
+  b = +prompt();
+  
+  document.write( funcAdd(a), "<br>" );
+  document.write( funcAdd(b) );  
+	
+</script>
+
+
+<script>
+
+  n = +prompt();
+  
+  result = 0;
+  //for(i = 0; i <= n; i+=1) {
+  //  result = result + i;
+  //}
+  i = 0;
+  while (i <= n) {
+	result = result + i;
+	i+=1;
+  } 
+  
+  document.write(result);
+	
+</script>
+
+https://makecode.microbit.org/
+let pos = 0
+input.onButtonPressed(Button.A, () => {
+    pos += 0 - 1
+    basic.showNumber(pos)
+})
+input.onButtonPressed(Button.B, () => {
+    pos += 1
+    basic.showNumber(pos)
+})
+input.onButtonPressed(Button.AB, () => {
+    pos = 0
+    basic.showNumber(pos)
+})
+basic.showString("Hello!")
+basic.pause(500)
+pos = 0
+basic.showNumber(pos)
+
+<script>
+
+  n = +prompt();
+  
+  result = 0;
+  for(i = 0; i <= n; ++i) {
+    result = result + i;
+  }
+  
+  document.write(result);
+	
+</script>
+
+<!--
+
+-->	
+	
+<script>
+	
+	a = Number( prompt("Введите число", 99) );
+	b = +prompt("Введите число", 100);
+	
+	if (a>b) document.write(a); else document.write(b);
+	
+</script>
+
+ПИб-18 - 03.10.18
+
+<script>
+	arr = [0, 1, 2, 5, 34];
+	n = 5; b = false;
+	for (i=0; i<arr.length; i++) {
+		if (n==arr[i])
+			b = true;
+	}
+	document.write( n, " - ", b? "есть": "нет");
+	document.write("<br>", arr);
+</script>
+
+<script>
+
+	function rnd(min, max) {
+		return Math.floor( min + Math.random()*(max+1-min) );
+	}
+
+	arr = [];
+	n = Number(prompt("Введите кол-во эл-тов", 10));
+	
+	for (i=0; i<n; i++) {
+		arr.push( rnd(10, 99) );
+	}
+	
+	i = 0;
+	while (i<arr.length) {
+		document.write(arr[i], "<br>");
+		i++;
+	}
+	
+	result = 0; i = 0;
+	do {
+		if (arr[i]%2 != 0)
+			result += Math.pow(arr[i], 3);
+		i++;
+	} while (i<arr.length);
+	document.write(result);
+
+</script>
+
+
+
+
+ПИбу-18 - 26.09.2018
+-modul.js-
+	function rnd(min, max) {	
+		return min+Math.floor((Math.random()*(max-min+1)));
+	}
+	
+-array.html-
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>ПИбу-2018</title>
+	<script src="modul.js"> </script>
+</head>
+
+<body bgcolor=#ffc>
+	<font color=#040 size=32 face="Courier New">
+	<script>
+		/*
+			10 случайных целое двузначное число
+		*/
+		arr = [];
+		count = 10;	min = 10; max = 99;
+		for (let i=0; i<count; i++) {
+			//arr[i] = rnd(min, max);
+			arr.push( rnd(min, max) );
+		}		
+		document.write(arr, "<br>");
+		i = count;
+		while (i>0) {
+			i--;
+			if (arr[i]%2 != 0) {
+				document.write(arr[i], i>0? ",": "");
+			}
+		}		
+	</script>
+	</font>
+</body>
+
+</html>
+
+
+
+
+
+Задание 1: Вывести на экран в столбик 10 случайных целых двузначных чисел.
+x = Math.floor(Math.random()*100)
+Math.random() - возвращает случайное число от 0 до 1 (не включая 1).
+
+-array.html-
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Заголовок</title>
+	<script src="func.js"> </script>
+</head>
+
+<body bgcolor=#ffc>
+	<font color=#040 size=32 face="Courier New">
+	<script>	
+		min = 10; max = 99; count = 5;
+		arr = [];
+		i = 0;
+		while (i<count) {
+			arr.push( rnd(min, max) );
+			i++;
+		}
+		document.write(arr);
+	</script>
+	</font>
+</body>
+
+</html>
+
+
+http://www.hdsw.ru/?p=21	- это шрифты
+-func.js-
+	function fact_while(n) {
+		result = 1;
+		index = 1;
+		while (index<=n) {
+			result*=index;
+			index++;
+		}
+		return result;
+	}
+	
+	function fact_rec(n) {
+		if (n==1) {
+			return 1;
+		}
+		else {
+			return fact_rec(n-1)*n;
+		}
+	}
+	
+	function binToDec(bin) {
+		dec = 0; st = 0;
+		for (let i=bin.length-1; i>=0; i--) {
+			dec += Number(bin[i])*Math.pow(2, st);
+			st++;
+		}
+		return dec;
+	}
+	
+	function rnd(min, max) {
+		return min+Math.floor(Math.random()*(max-min+1));
+	}
+	
+	
+	
+-binToDec-
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Заголовок</title>
+	<script src="func.js"> </script>
+</head>
+
+<body bgcolor=#ffc>
+	<font color=#040 size=32 face="Courier New">
+	<script>	
+		bin = prompt("Введите двоичное число");
+		document.write(binToDec(bin),"<br>");
+	</script>
+	</font>
+</body>
+
+</html>
+
+-p03.html- 
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Заголовок</title>
+	<script src="func.js"> </script>
+</head>
+
+<body bgcolor=#00FF00>
+	<font color=#FFFF55 size=32 face="Courier New">
+	Тут будут наши ответы:<br>
+	<script>	
+		n=5;
+		document.write(fact_rec(n));
+	</script>
+	</font>
+</body>
+
+</html>
+
+
+Пибу-18 - 25.09.2018
+Задание 1: Введены значения длин трех отрезков. Написать программу, которая определяет можно ли из них составить треугольник.
+Звдание 2: Написать программу вычисления факториала числа. Например: 5! = 1*2*3*4*5 = 120
+2.1 for
+2.2 while
+2.3 recurs
+
+
+
+Как форматировать тегами страницу.
+Работа с массивами...
+
+
+Рекурсия??? 
+
+Евклид...
+<script>
+	function nodEvklid(a, b) {		
+		while (a!=b) {
+			if (a>b) a-=b; else	b-=a;
+		}
+		return a;
+	}
+	
+	a = 12; b = 16;
+	document.write("NOD=", nodEvklid(a, b));
+</script>
+
+<script>
+	function nod2(a,b) {
+		min = a<b? a: b;
+		for (i=min; i>0; i--) { // i=i-1  i-=1
+			if ((a%i==0) && (b%i==0)) {
+				nod = i;
+				break;
+			}
+		}
+		return nod;
+	}
+	// && - И    || - ИЛИ
+	a = 12; b = 16;
+	document.write("NOD=", nod2(a, b));
+</script>
+
+
+<script>
+	// x1 = (-b + Math.sqrt(D))/(2*a);
+	// x2 = (-b - Math.pow(D, 1/2))/(2*a);
+/*
+	function max3(x, y, z){
+		if (x > y) {
+			max = max2(x, z);
+		}
+		else {
+			max = max2(y, z);
+		}
+		return max;
+	}
+	function max3Tern(x, y, z){
+		return x>y? max2(x, z): max2(y, z);
+	}
+*/
+	function max2(x, y) {
+		if (x > y) {
+			max = x;
+		}
+		else {
+			max = y;
+		}
+		return max;
+	}
+	
+	function max3(x, y, z){
+		if (x > y) {
+			if (x > z) {
+				max = x;
+			}
+			else {
+				max = z;
+			}
+		}
+		else {
+			if (y > z) {
+				max = y;
+			}
+			else {
+				max = y;
+			}
+		}
+		return max;
+	}
+
+	a = Number(prompt("Введите число X"));
+	b = Number(prompt("Введите число Y"));
+	c = Number(prompt("Введите число Z"));
+	max = max3(a, b, c);
+	document.write(max);
+</script>
+
+Пибу-18 - 19.09.2018
+<script>
+	// camelStyle
+	dec = parseInt(prompt());
+	bin = "";
+	while (dec>0) {
+		bin = dec%2 + bin;
+		dec = Math.floor(dec/2); 
+	}
+	document.write(bin);	
+</script>
+
+<html>
+
+<head>
+	<title>Моя программа</title>
+	<script src=modul.js> </script>
+</head>
+
+<body bgcolor=#FFFF97>
+	<font size=8 face="Courier New"  color=#002255>
+	Тут будут данные:<br>
+	<script>
+		document.write( decToBin( parseInt( prompt() ) ) );	
+	</script>
+	</font>
+	
+</body>
+
+</html>
+
+modul.js
+	function decToBin(dec) {		
+		bin = "";
+		while (dec>0) {
+			bin=dec%2+bin;
+			dec=Math.floor(dec/2);
+		}
+		return bin;
+	}
+	
+	function binToDec(bin) { // из двоичной в десятичную
+		// String(11010)
+		dec = 0; st = 1; // 2^0		
+		while (bin>0) {
+			dec += (bin%10)*st;
+			st *= 2;
+			bin = Math.floor(bin/10);
+		}
+		return dec;
+	}	
+	
+	function binStrToDec(bin) { // из двоичной в десятичную
+		dec = 0;		
+		for (i=bin.length-1; i>=0; i--) {
+			dec += Number(bin[i]) * Math.pow(2,bin.length-i-1);
+		}
+		return dec;
+	}
+
+
+Пиб-18 - 20.09.2018
+
+с лекции 24092018
+-uses.js-
+	const ms = ["январь", "февраль", "март", "апрель", "май", "июнь"];
+
+	function avgArr(arr) {
+		avg = 0;
+		for (i=0; i<arr.length; i++) {
+			avg += arr[i];
+		}
+		return avg/arr.length;
+	}
+
+-array.html-
+<meta charset="utf-8">
+<script src="uses.js"> </script>
+
+<script>
+	var arr = [];
+	for (let i=0; i<6; i++) {
+		let title = "Введите доход за месяц - " + ms[i];
+		let s = prompt(title);
+		let n = Number(s)
+		arr.push(n); // arr[12000]
+	}
+
+	avg = avgArr(arr);
+	document.write("avg = ", avg.toFixed(3));
+
+	document.write("<br>");
+	i = 0;
+	while (i<arr.length) {
+		if (arr[i]<avg)
+			document.write(ms[i], "<br>");
+		i++;
+	}
+</script>
+
+-palindrom.html-
+<script>
+    var zSymbols = " !?.,:;-+";
+    var str = "Аргентина - м4анит негра!";
+    document.write(str, "<br>");
+    str = str.toUpperCase();
+    document.write(str, "<br>");
+
+    var newStr = "";
+    for (let i=0; i<str.length; i++) {
+        if (zSymbols.indexOf(str[i]) == -1) {
+            newStr += str[i];
+        }
+    }
+
+    b = true;
+    for (let i=0; i<Math.floor(newStr.length/2); i++) {
+        if (newStr[i] != newStr[newStr.length-i-1] ) {
+            b = false;
+            break;
+        }
+    }
+    temp = b? "+++": "---";
+    document.write(temp);
+    /*
+    if (b) {
+        document.write("++++");
+    }
+    else {
+        document.write("----");
+    }
+    */
+/*
+потоп
+А роза упала на лапу Азора.
+Аргентина - манит негра!
+аргентинаманитнегра
+*/
+</script>
+
+task
+Вывести на экран в столбик номера/названия месяцев, в которые доход был ниже среднего.
+
+
+-nod.html-
+<meta charset="utf-8">
+<script src="uses.js"> </script>
+
+<script>
+	a = Number(prompt("Введите a"));
+	b = Number(prompt("Введите b"));
+	document.write("nod = ", nod(a, b));
+</script>
+
+-array.html
+<meta charset="utf-8">
+<script src="uses.js"> </script>
+
+<script>
+	var arr = [];
+	for (i=0; i<6; i++) {
+		arr.push(Number(prompt("Введите доход за месяц - ", ms[i])));
+	}
+	
+	avg = avgArr(arr);
+	document.write("avg = ", avg.toFixed(3));
+	
+	document.write("<br>");
+	for (i=0; i<arr.length; i++) {
+		if (arr[i]<avg)
+			document.write(ms[i], "<br>");
+	}	
+	
+</script>
+
+-uses.js-
+	const ms = ["январь", "февраль", "33", "44", "55", "66"];
+	
+	function avgArr(arr) {
+		avg = 0;
+		for (i=0; i<arr.length; i++) {
+			avg += arr[i];
+		}
+		return avg/arr.length;
+	}
+	
+	function nod(a, b) {
+		if (a<b)
+			min = a;
+		else
+			min = b;
+		nod = 1;
+		for (i=min; i>=1; i--) {
+			if ((a%i==0) && (b%i==0)) {
+				nod = i;
+				break;
+			}
+		}	
+		return nod;
+	}
+	
+	function nodE(a, b) {
+		while (a!=b) {
+			if (a>b) a-=b; else b-=a;
+		}
+		return a;
+	}
+
+
+	
+	
+	
+<meta charset="utf-8">
+<script>
+	function main() {
+		a = prompt();
+		b = prompt();
+		c = prompt();
+		d = b*b - 4*a*c;
+		if (d > 0) {
+			x1 = (-b+Math.sqrt(d)) / 2/a;
+			x2 = (-b-Math.sqrt(d)) / (2*a);
+			document.write("x1 = ", x1.toFixed(2), "<br>");
+			document.write("x2 = ", x2.toFixed(2));
+		}
+		else {
+			if (d == 0) {
+				x1 = -b / (2*a);
+				document.write("x1 = ", x1.toFixed(2));
+			}
+			else {
+				document.write("корней нет");
+			}
+		}
+	}
+	
+	main();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+modul.js
+	function root(x) {
+		return Math.pow(x, 1/2);
+	}
+	
+	function max2(x, y) {
+		if (x>y) return x; else return y;	
+	}
+	
+	function max(a, b, c) {
+		if ((a>b) && (a>c)) m = a;
+		if ((b>c) && (b>a))	m = b;
+		if ((c>b) && (c>a))	m = c;
+		return m;
+	}
+	
+	function max3(a,b,c) {
+		if (a>b) m = max2(a, c); else m = max2(b, c);			
+		return m;
+	}
+
+-01-
+<html>
+
+<head>
+	<script src="modul.js">	</script>
+</head>
+
+<body>
+	<script>
+	
+		a = Number(prompt("Введите a"));
+		b = Number(prompt("Введите b"));
+		c = Number(prompt("Введите c"));
+		d = b*b - 4*a*c;
+	
+		if (d>0) {
+			x1 = (-b + root(d))/(2*a);
+			x2 = (-b - root(d))/(2*a);
+			document.write("X1 = ", x1.toFixed(3), "<br>");
+			document.write("X2 = ", x2.toFixed(3), "<br>");
+		}
+		else {
+			if (d==0) {
+				x1 = -b/(2*a);
+				document.write("X1 = ", x1, "<br>");
+			}
+			else {
+				document.write("корней нет");
+			}
+		}
+	
+	</script>
+</body>
+
+</html>
+
+
+
+-02-
+Пользователь вводит три числа - вывести на экран большее из трёх.
+<html>
+
+<head>
+	<script src="modul.js">	</script>
+</head>
+
+<body>
+	<script>
+	
+		a = Number(prompt("Введите a"));
+		b = Number(prompt("Введите b"));
+		c = Number(prompt("Введите c"));
+		document.write("максимум = ", max3(a,b,c));
+	
+	</script>
+</body>
+
+</html>
+
+-03-
+Даны значения длин трёх отрезков. Определить можно ли из них составить треугольник. На экран вывести ответ.
+
+
+
+
+
+	
+	
+Пиб-18 - 18.09.2018
+
+алгоритмы
+системы счисления
+кодирование цвета
+кодирование символов
+кодирование чисел
+переменные
+типы данных и ошибки в js
+структурные операторы
+функции
+
+<script>
+	bin = +prompt("Введите двоичное число);
+	dec = 0;
+	st = 0;
+	while (bin > 0) {
+		temp = bin % 10;
+		dec = dec + temp*Math.pow(2,st) ;
+		bin = Math.floor(bin/10); // 110,1
+		st = st + 1;
+	}	
+	document.write(dec);
+</script>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Название</title>
+</head>
+
+<body bgcolor="yellow">
+	<font size=6 face="Courier New" color="blue">
+	<b>
+	<script>
+		count = +prompt("Введите число");
+		for (i=1; i<=count; i++) {
+			document.write(i+"<br>");
+		}	
+	</script>
+	<b>
+	</font>
+</body>
+
+</html>
+
+-00-
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Моя первая программа</title>
+	<script>
+		function printS(r, z) {
+			s = Math.PI*Math.pow(r,2);
+			document.write( "S = ", s.toFixed(z) );
+		}
+	</script>
+<head>
+
+<body bgcolor=#FFFF99>
+	<font face="Courier New" size=5 color=#009900>
+	<b>
+
+	Тут будут результаты вычислений:<br>
+	<script>
+		r = prompt("Введите радиус круга");
+		z = prompt("Введите точность вычислений");
+		printS(r, z);
+	</script>
+
+	</b>
+	</font>
+</body>
+
+</html>
+
+-01-
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Массив</title>
+	<script>
+		function findMax(arr) {
+			max = arr[0];
+			for (i=0; i<arr.length; i++) {
+				if (max>arr[i]) max=arr[i];
+			}
+			return max;			
+		}
+	</script>
+<head>
+
+<body bgcolor=#FFFF99>
+	<font face="Courier New" size=5 color=#009900>
+	<b>
+
+	Тут будут результаты вычислений:<br>
+	<script>
+		arr = [2, -2, -55, 909, 666];		
+		max = findMax(arr);
+		document.write( "Размер = ", arr.length, "<br>" );
+		document.write( "Max = ", max );
+	</script>
+
+	</b>
+	</font>
+</body>
+
+</html>
+
+-02-
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Массив случайных чисел</title>
+<head>
+
+<body bgcolor=#FFFF99>
+	<font face="Courier New" size=5 color=#009900>
+	<b>
+
+	Тут будут результаты вычислений:<br>
+	<script>
+		arr = [];
+		for (i=0; i<10; i++) {
+			num = Math.floor(Math.random()*100); // ceil
+			arr.push(num);
+		}
+		
+		for (i=0; i<10; i++) {
+			document.write(i," - ",arr[i], "<br>");
+		}		
+	</script>
+
+	</b>
+	</font>
+</body>
+
+</html>
+
+-03-
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Оператор switch</title>
+<head>
+
+<body bgcolor=#FFFF99>
+	<font face="Courier New" size=5 color=#009900>
+	<b>
+
+	<script>
+		var age = +prompt("Ваш возраст ?");
+		switch (true) {
+			case (age<18):
+				alert("кандидат в призывники");
+				break;
+			case (age<28):
+				alert("призывник");
+				break;
+			default:
+				alert("уже свободен");				
+		}
+	</script>
+
+	</b>
+	</font>
+</body>
+
+</html>
+
+-04-
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Оператор switch</title>
+	<script src="modul.js">
+	
+	</script>
+<head>
+
+<body bgcolor=#FFFF99>
+	<font face="Courier New" size=5 color=#009900>
+	<b>
+
+	<script>
+		var age = +prompt("Ваш возраст ?");
+		document.write( check(age) ); // функция check из модуля
+	</script>
+
+	</b>
+	</font>
+</body>
+
+</html>
+
+-modul.js-
+function check(age) {
+	switch (true) {
+		case (age<18):
+			result = "кандидат в призывники";
+			break;
+		case (age<28):
+			result = "призывник";
+			break;
+		default:
+			result = "уже свободен";
+	}
+	return result;
+}
