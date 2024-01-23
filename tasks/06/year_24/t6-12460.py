@@ -16,4 +16,4 @@ for x in range(-5, +22):
     for y in range(-20, +8):
         setpos(x*k, y*k)
         dot(3)
-done()
+done()  # 76
