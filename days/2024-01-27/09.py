@@ -1,19 +1,8 @@
-from itertools import product
-
-def check(elm):
-    for i in range(len(elm)-1):
-        if elm[i]==elm[i+1]: return False
-    return True
-
-k, al = 0, '012345678'
-for elm in product(al, repeat=5):
-    if elm[0] != '0' and elm.count('5') == 1:
-        # if elm[0]!=elm[1] and elm[1]!=elm[2] and elm[2]!=elm[3] and elm[3]!=elm[4]:
-        if check(elm):
+k = 0
+for line in open('./09_12241.csv'):
+    t = [int(e) for e in line.split(',')]
+    p = [e for e in t if t.count(e) == 2]
+    if len(p) == 6:
+        if (min(p) + max(p))/2 < sum(t) - sum(p):
             k += 1
-print(k)  # 13377
-"""
-девятеричных пятизначных чисел, 
-ровно одну цифру 5, 
-никакие две одинаковые цифры не стоят рядом
-"""
+print(k)  # 3382
