@@ -23,10 +23,5 @@
 ---  
 
 ```txt
-F9    - вкл/выкл
-Sh-F9 - cls
-Ct-F9 - visible
-Al-F9 - qiut
-F8    - undo
-Sh-F8 - redo
+
 ```
