@@ -1,8 +1,15 @@
-
+// kompege 16374
+// console.log(parseInt(12, 7)) // 12(7) => X(10) = 9
 console.log(
-    Array(parseInt(10_000_000, 7) - parseInt(1_000_000, 7))
-        .fill(parseInt(1_000_000, 7))
-        .map((e, i) => (e + i).toString(7).split('').map(e => +e).filter(e => e % 2 === 0).length === 2)
-        .filter(e => e)
-        .length
-)
+    Array(parseInt(10_000_000, 7) - parseInt(1_000_000, 7)) // сколько всего семеричных
+        .fill(parseInt(1_000_000, 7)) // заполним 10-ным представителем мин-го семеричного
+        .map((e, i) => (e + i) // минимальное 10-ное + смещение на i
+            .toString(7) // переведём в семеричное
+            .split('') // на массив символов
+            .map(e => +e) // элементы в число
+            .filter(e => e % 2 === 0) // только чётные
+            .length === 2 // те, в которых по 2 чётных = true
+        )
+        .filter(e => e) // отберём только true
+        .length // узнаем сколько таких
+) // 75816
